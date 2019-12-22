@@ -13,7 +13,7 @@ public class OrpacLoginTest{
 	
 	
 	public void loginpage(WebDriver driver){
-        String baseUrl = "https://mktint.orepac.com/Account/LogOn?ReturnUrl=%2f";
+        String baseUrl = "https://typeyoururl.com";
         driver.manage().window().maximize(); 
         driver.get(baseUrl);
         
@@ -27,7 +27,7 @@ public class OrpacLoginTest{
         WebElement username=driver.findElement(By.id(IdUser));
         
         Utilities.UtilitiesMethod(driver, IdUser);
-        username.sendKeys("testbranchadmin01@orepac.com");
+        username.sendKeys("youruserid");
         }
         else {
         	System.out.println("Text box to enter User Name not found!");
@@ -35,7 +35,7 @@ public class OrpacLoginTest{
         
         if(isPresentPass) {
         	WebElement password=driver.findElement(By.id(Idpasswo));
-        	password.sendKeys("Admin!234");
+        	password.sendKeys("yourpassword");
         }
         else {
         	System.out.println("Text box to enter password not found!");
