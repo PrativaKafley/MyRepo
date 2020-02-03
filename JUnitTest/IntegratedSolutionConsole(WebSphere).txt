@@ -1,0 +1,40 @@
+https://docs.oracle.com/cd/E26228_01/doc.93/e41132/ch_config_websphere_server.htm#WEASJ195 (Application type setup guide)
+https://www.ibm.com/support/pages/enabling-global-security-websphere-application-server-using-ldap (Global security setup guide)
+https://docs.oracle.com/cd/E59116_01/doc.94/e58797/ch_config_websphere_server.htm#WEASJ159 (Global security setup guide)
+
+
+SELENIUM TEST GUID:
+https://www.techbeamers.com/checkbox-and-radio-button-webdriver/(selenium test for multiple path radio buttons)
+https://selenium-by-arun.blogspot.com/2017/04/423-using-getallselectedoptions-to-get.html (selecting multiple selections at once)
+
+
+
+//Checking if the Male Radio button is displayed on the Webpage and printing the status
+
+              boolean radioBtnIsDisplayed = maleRadioBtn.isDisplayed // boolean radioBtnIsDisplayed = list.getIndex(i).isDisplayed
+
+              System.out.println("Is Male radio button displayed: "+radioBtnIsDisplayed); //System.out.println()
+
+             
+
+              //Checking if the Male Radio button is enabled on the webpage and printing the status
+
+              boolean radioBtnIsEnabled = maleRadioBtn.isEnabled();
+
+              System.out.println("Is Male radio button enabled: "+radioBtnIsEnabled);
+
+             
+
+              //Checking the default radio button selection status
+
+              boolean radioBtnIsSelected = maleRadioBtn.isSelected();
+
+              System.out.println("Default Radio button selection Status: "+radioBtnIsSelected);
+
+             
+
+              //Selecting male radio button
+
+              maleRadioBtn.click();
+
+             
