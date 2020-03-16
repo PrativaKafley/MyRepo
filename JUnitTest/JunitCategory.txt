@@ -1,0 +1,54 @@
+
+@Category(RunningTest.class)
+Class MainClass{
+
+@Test
+public void MethodA(){
+
+}
+
+@Test
+public void MethodB(){
+
+}
+
+@Test
+public void MethodC(){
+
+}
+
+}
+
+//##################################
+RunningTest.java
+public interface RunningTest{
+
+}
+
+//#########################################
+RunningTestSuite.java
+package com.mkyong.category;
+
+import org.junit.experimental.categories.Categories;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+
+@RunWith(Categories.class)
+@Categories.IncludeCategory(RunningTest.class)
+@Suite.SuiteClasses(MainClass.class)
+
+public class RunningTestSuite{
+
+}
+
+//################################################
+in build.gradle include
+
+test {
+    useJUnit {
+        includeCategories 'org.gradle.junit.RunningTest'
+        //excludeCategories 'org.gradle.junit.CategoryB'
+    }
+}
+
